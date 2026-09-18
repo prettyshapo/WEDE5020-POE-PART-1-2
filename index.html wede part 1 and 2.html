@@ -1,0 +1,240 @@
+<!DOCTYPE html> PART 1
+<html lang="en"
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/style.css"> <!-- External CSS -->
+<title>Allures - Discover Your Signature Scent</title>
+</head>
+<body>
+<!--Page header -->
+<header>
+     <img src="img/logo.png" alt="Allures - Embrace Your Scent" Width="500" height="300">
+     <h1>Allures - </h1>
+</header>
+<!--Navigation -->
+<nav>
+    <a href="index.html">Home</a>&nbsp;&nbsp;
+    <a href="shop.html">Shop</a>&nbsp;&nbsp;
+    <a href="book.html">Book</a>&nbsp;&nbsp;
+    <a href="contact.html">Contact</a>&nbsp;&nbsp;
+    <a href="about.html">About</a>&nbsp;&nbsp;
+</nav>
+<!-- Website content-->
+     <main>
+         <section>
+             <h2>Welcome to Allures perfume boutique</h2>
+             <p>Discover our elegant perfumes.Allures create long lasting scents</p>
+             </section>
+             <section>
+                <h3>Here is a glimpse of some of our fragrances</h3>
+                <img src"" alt="">
+                <img src"" alt="">
+                <img src"" alt="">
+                <img src"" alt="">
+                <!-- Mini gallery-->
+             </section>
+             <section>
+                 <button type="button">Shop our collection</button>
+                 <button type="button">Book a scent discovery consultation</button>
+             </section>
+     </main>
+
+
+<!--Page Footer -->
+    <footer>
+        <h3>Our Socials</h3>
+        <a href="">Instagram <!-- Add link -- > 
+            <img src="images/Instagram.png" alt="Allures Instagram account" width="25" height="25">
+        </a>
+        <a href="https://www.facebook.com/@allures.sct" target="_blank">
+            <img src="images/tik-tok.png" alt="Allures Tiktok account" width="25" height="25">   
+        </a>
+        <p>&copy; 2026 ALLURES. All rights reserved.</p>
+
+        PART 2
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLURES | Luxury Perfume</title>
+    <style>
+    /* ===== 1. RESET & CASCADING BASE ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 100%; /* 1rem = 16px - relative unit */
+      line-height: 1.7;
+      color: #111;
+    }
+
+    /* Cascading: h1,h2,h3 inherit font-family,color set once */
+    h1, h2, h3  color: #1a1a1a; font-weight: 600; line-height: 1.2; } 
+
+    /* ===== 2.4 LAYOUT - FLEX & GRID ===== */
+    .main-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 75rem;
+      margin: 0 auto;
+      padding: 1.5em 0;
+    }
+
+    .main-header nav { display: flex; gap: 2em; } 
+    .main-header a { text-decoration: none; color: #222; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+
+    .hero {
+      width: 100%;
+      max-width: 75rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 3 rem;
+      padding: 4rem 5%;
+    }
+
+    /* Multi-column layout on larger screens */
+    .products {
+      width: 90%;
+      max-width: 75rem;
+      margin: 3rem auto;
+      display: grid;
+      grid-template-colums: repeat(3, 1fr); /* 3 columns desktop */
+      gap: 2rem;
+    }
+
+    /* ===== 2.5 VISUAL STYLES & INTERACTIVE ===== */
+    .button {
+      background: #111; color: #fff; border: none;
+      padding: 0.9em 2em; border-radius: 2em;s
+      cursor: pointer; transition: all 0.3s ease;
+      font-size: 0.9rem; letter-spacing: 1px;
+    }
+    .button:hover { background: #c5a47e; transform: translateY(-2px); }
+    .button:focus { outline: 3px solid #c5a47e; outline-offset: 2px; }
+    .button:active { transform: scale(0.97); }
+
+    .card {
+      background: #fff; border: 1px solid #eee; border-radius: 0.8rem;
+      padding: 1.5em; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      width: 100%; /* % for responsive width */
+    }
+    .card:hover  transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: #c5a47e; } 
+
+    /* Responsive Images Base */
+    img { max-width: 100%; height: auto; display: block; border-radius: 0.5rem; }
+    .hero-img { width: 100%; } 
+
+    /* ===== 3.1 BREAKPOINTS - Media Queries ===== */
+    /* Tablet: 768px - 1023px */
+    @media (max-width: 1023px) {
+      .products { grid-template-columns: repeat(2, 1fr); } 
+      h1 { font-size: 2.4rem; } 
+      .hero { grid-template-columns: 1fr, padding: 2rem 5%; } 
+    }
+
+    /* Mobile: 767px and below - switches to single-column */
+    @media (max-width: 767px) {
+      .products { grid-template-columns: 1fr; } /* single-column on smaller screens */
+      h1 { font-size: 1.9rem; } 
+      h2 { font-size: 1.6rem; } 
+      body { font-size: 95%; } 
+
+      /* Modify navigation for each breakpoint */
+      .main-header { flex-direction: column; gap: 0.8em; text-align: center; width: 100%; } 
+      .hero { gap: 1.5rem; } 
+    } 
+
+    /* Small Mobile */
+    @media (max-width: 480px) { 
+      .main-header, .products, .hero { width: 95%; } 
+    }
+    </style>
+    </head>
+    <body>
+
+    <header class="main-header">
+      <h3 style="letter-spacing:4px,"ALLURES</h3>
+      <nav>
+      <a href="#">Collection</a> 
+      <a href="#">Our Story</a>
+      <a href="#">Contacts</a> 
+    </nav>
+    <button class="button">Shop Now</button>
+   </header>
+
+   <section class="hero">
+     <div>
+       <p style="letter-spacing:3px; color:#c5a47e;"NEW COLLECTION 2026</p>
+        <h1>Scent That<br>Remembers You.</h1>
+        <p style="margin-top:1em;">Crafted in Centurion with French oils. Long-lasting, elegant, and unforgettable. ALLURES is not just perfume, it's presence.</p>
+        <br>
+        <button class="button">Explore Collection</button>
+        </div>
+
+        <!-- 3.3 Responsive Images: picture + srcset -->
+        <picture>
+          <!-- Mobile gets cropped square image -->
+          <source media="(max-width: 767px)" srcset="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600">
+          <!-- Desktop gets wide image -->
+           <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1000">
+           <img class="hero-img" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1000" alt="ALLURES perfume bottle">
+        </picture>
+       </section>
+
+       <section>
+         <h2 style="text-align:center;"Best Sellers</h2>
+         <div class="products">
+           <!-- Product 1: Using srcset and sizes -->
+           <div class="card"
+            <img
+              src="Allures-noir.jpg"
+              srcset="Allures-noir.jpg 400w, Allures-noir.jpg 800w, Allures-noir.jpg 1200w"
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+              alt="Allures Essence">
+            <br>
+            <h3>Allures Essence</h3>
+            <p>Eau de Parfum - 50ml. Deep oud, vanilla, amber.</p>
+            <strong>R 899.99</strong>
+           </div>
+
+           <div class="card">
+             <img
+             src="Allures-noir.jpg"
+             srcsett="Allures-noir.jpg 400w, Allures-noir.jpg 800w, Allures-noir.jpg 1200w"
+             sizes="(max-width: 767px) 100vw, 33vw"
+             alt="Blush Aura - ALLURES">
+             <br>
+             <h3>Blush Aura</h3>
+             <p>Eau de Parfum - 50ml. Rose, peony, soft musk.</p>
+             <strong>R 800</strong>
+           </div>
+
+           <div class="card">
+             <img
+             src="Allures-noir.jpg"
+             srcset="Allures-noir.jpg 400w, Allures-noir.jpg 800w, Allures-noir.jpg 1200w"
+                     sizes="(max-width: 767px) 100vw, 33vw"
+                     alt="Citrus Dawn - ALLURES">
+                    <br>
+                    <h3>Citrus Dawn</h3>
+                    <p>Eau de Parfum - 50ml. Bergamont, jasmine, sandalwood.</p>
+                    <strong>R 820</strong>
+                  </div>
+                </div>
+            </section>
+
+            <footer style="text-align:center; padding:3em; background:#111; color:#fff; margin-top:4rem;">
+              <p>&copy; 2026 ALLURES Perfumes - Centurion, South Africa</p>
+
+
+             
